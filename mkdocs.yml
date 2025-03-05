@@ -1,0 +1,58 @@
+site_name: Arsenal
+site_description: A powerful, lightweight AI agent framework for building intelligent applications
+repo_url: https://github.com/clustrlabs/arsenalpy
+repo_name: arsenal
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quickstart.md
+  - Core Concepts:
+      - Agents: core-concepts/agents.md
+      - Skills: core-concepts/skills.md
+      - Configuration: core-concepts/configuration.md
+  - API Reference:
+      - Agents: api/agents.md
+      - Skills: api/skills.md
+  - Built-in Skills:
+      - Search: api/built-in-skills/search.md
+      - Browse: api/built-in-skills/browse.md
+  - Agent Examples:
+      - Overview: examples/index.md
+  # - Community Skills:
+  - Contributing Guide:
+      - Core Development: developer-guide/core.md
+      - Community Skills: developer-guide/community-skills.md
